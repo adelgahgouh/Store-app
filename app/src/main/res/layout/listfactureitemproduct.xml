@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="8dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+
+                android:layout_margin="5dp"
+                android:id="@+id/imgfactlistitem"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgfactlistitem"
+                android:layout_marginTop="20dp"
+                android:id="@+id/tvnameproductfactlistitem"
+                android:text="name product"
+                android:textSize="24sp"
+                android:paddingLeft="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/bgcolor"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgfactlistitem"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+
+                android:id="@+id/tvpriceproductfactlistitem"
+                android:text="price "
+                android:layout_below="@+id/tvnameproductfactlistitem"
+                android:textSize="24sp"
+                android:paddingLeft="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/green"
+                />
+            <CheckBox
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/checkboxfact"
+                android:layout_toRightOf="@+id/tvpriceproductfactlistitem"
+                android:layout_below="@id/tvnameproductfactlistitem"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+
+                />
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgfactlistitem"
+                android:id="@+id/quntiteproductfact"
+                android:layout_below="@+id/tvpriceproductfactlistitem"
+                android:layout_marginTop="20dp"
+                android:inputType="number"
+android:textColor="@color/red"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:text="0"
+                android:layout_marginLeft="30dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/quntiteproductfact"
+                android:layout_marginTop="20dp"
+                android:id="@+id/tvquntitefact"
+                android:text="/nbr"
+                android:layout_below="@+id/tvpriceproductfactlistitem"
+                android:textSize="24sp"
+                android:paddingLeft="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/red"
+                />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

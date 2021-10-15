@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="8dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+
+                android:layout_margin="5dp"
+                android:id="@+id/imgfactureact"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgfactureact"
+                android:layout_marginTop="20dp"
+                android:id="@+id/tvnameclientfacture"
+                android:text="name client"
+                android:textSize="24sp"
+                android:paddingLeft="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/bgcolor"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgfactureact"
+                android:layout_marginTop="20dp"
+                android:id="@+id/tvtotalpricefactureact"
+                android:text="total price "
+                android:layout_below="@+id/tvnameclientfacture"
+                android:textSize="24sp"
+                android:paddingLeft="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/green"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgfactureact"
+                android:layout_marginTop="20dp"
+                android:id="@+id/datefacture"
+                android:text="date "
+                android:layout_below="@+id/tvtotalpricefactureact"
+                android:textSize="24sp"
+                android:paddingLeft="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/red"
+                />
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/btneditfacture"
+                android:layout_below="@+id/datefacture"
+                android:background="@drawable/edit"/>
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/btndeletefacture"
+                android:layout_below="@+id/datefacture"
+                android:background="@drawable/delete"/>
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/imgfactureact"
+                android:id="@+id/btnshowfacture"
+                android:layout_below="@+id/datefacture"
+                android:background="@drawable/show"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

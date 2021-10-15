@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.info.store.addproduct">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvaddproduct"
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgaddproduct"
+                    android:text="ADD PRODDUCT"
+                    android:textColor="@color/bgcolor"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etquantiteproductadd"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/btn"
+                    android:padding="20dp"
+                    android:onClick="btnsaveaddproduct"
+                    android:text="ADD PRODUCT"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgaddproduct"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/product" />
+
+                <EditText
+                    android:id="@+id/etquantiteproductadd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etpriceproductadd"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/bgcolor"
+                    android:hint="QUANTITE"
+                    android:inputType="number"
+
+                    android:background="@drawable/bgedit"
+                    android:padding="20dp"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/bgcolor"
+                    android:textColorHint="@color/bgcolor"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etpriceproductadd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etnameproductadd"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bgedit"
+                    android:padding="20dp"
+                    android:backgroundTint="@color/bgcolor"
+                    android:hint="PRICE"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/bgcolor"
+                    android:textColorHint="@color/bgcolor"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etnameproductadd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvaddproduct"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bgedit"
+                    android:padding="20dp"
+                    android:backgroundTint="@color/bgcolor"
+                    android:hint=" NAME PRODUCT"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/bgcolor"
+                    android:textColorHint="@color/bgcolor"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
